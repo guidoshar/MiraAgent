@@ -1,0 +1,56 @@
+/* ═══════════════════════════════════════════════════════════
+   MiraAgent — Dark Theme
+   Activated via [data-mira-theme='dark']
+   ═══════════════════════════════════════════════════════════ */
+
+[data-mira-theme='dark'] {
+  /* ── Brand (slightly brighter in dark) ─────────────────── */
+  --mira-primary: #818cf8;
+  --mira-primary-hover: #6366f1;
+  --mira-primary-light: #1e1b4b;
+  --mira-gradient: linear-gradient(135deg, #818cf8, #a78bfa);
+  --mira-gradient-wide: linear-gradient(90deg, #818cf8, #a78bfa, #c4b5fd, #818cf8);
+
+  /* ── Accent ────────────────────────────────────────────── */
+  --mira-accent-mint: #42be65;
+  --mira-accent-berry: #ff7eb6;
+  --mira-accent-citrus: #f1c21b;
+  --mira-accent-grape: #a56eff;
+
+  /* ── Surfaces ──────────────────────────────────────────── */
+  --mira-bg: #0f0f1a;
+  --mira-bg-secondary: #161625;
+  --mira-bg-tertiary: #1c1c30;
+  --mira-bg-hover: #24243d;
+  --mira-bg-active: #2d2d4a;
+  --mira-bg-overlay: rgba(0, 0, 0, 0.65);
+
+  /* ── Text ──────────────────────────────────────────────── */
+  --mira-text: #e8e8f0;
+  --mira-text-secondary: #a0a3bd;
+  --mira-text-tertiary: #6b6f8a;
+  --mira-text-inverse: #0f0f1a;
+  --mira-text-link: var(--mira-primary);
+
+  /* ── Borders ───────────────────────────────────────────── */
+  --mira-border: #2a2a42;
+  --mira-border-hover: #3d3d5c;
+  --mira-border-focus: var(--mira-primary);
+
+  /* ── Status ────────────────────────────────────────────── */
+  --mira-success: #42be65;
+  --mira-success-bg: #0e2a1a;
+  --mira-warning: #f1c21b;
+  --mira-warning-bg: #2a2200;
+  --mira-error: #ff8389;
+  --mira-error-bg: #2d0709;
+  --mira-info: #78a9ff;
+  --mira-info-bg: #0a1a33;
+
+  /* ── Shadows (deeper in dark) ──────────────────────────── */
+  --mira-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --mira-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --mira-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --mira-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --mira-shadow-panel: 0 8px 40px rgba(99, 102, 241, 0.2);
+}

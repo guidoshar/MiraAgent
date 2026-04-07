@@ -1,0 +1,78 @@
+/* ═══════════════════════════════════════════════════════════
+   MiraAgent — Keyframe Animations
+   Candy Design-inspired: shimmer, pulse, wave, typewriter
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Gradient shift (header rainbow bar) ─────────────────── */
+@keyframes miraGradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Shimmer flow (buttons, active cards) ────────────────── */
+@keyframes miraShimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Pulse (online indicator) ────────────────────────────── */
+@keyframes miraPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.6); opacity: 0; }
+}
+
+/* ── Brain wave (thinking state) ─────────────────────────── */
+@keyframes miraBrainWave {
+  0%, 100% { transform: scale(1); }
+  25%      { transform: scale(1.08) rotate(-3deg); }
+  75%      { transform: scale(1.08) rotate(3deg); }
+}
+
+/* ── Candy wave (loader dots) ────────────────────────────── */
+@keyframes miraCandyWave {
+  0%, 80%, 100% { transform: translateY(0); }
+  40%           { transform: translateY(-8px); }
+}
+
+/* ── Slide in from bottom ────────────────────────────────── */
+@keyframes miraSlideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Fade in ─────────────────────────────────────────────── */
+@keyframes miraFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Scale in (panel open) ───────────────────────────────── */
+@keyframes miraScaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Typing cursor blink ────────────────────────────────── */
+@keyframes miraCursorBlink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* ── Spin (loading) ──────────────────────────────────────── */
+@keyframes miraSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Progress bar indeterminate ──────────────────────────── */
+@keyframes miraProgress {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+/* ── Zap flash (executing) ───────────────────────────────── */
+@keyframes miraZapFlash {
+  0%, 100% { opacity: 1; filter: brightness(1); }
+  50%      { opacity: 0.7; filter: brightness(1.4); }
+}

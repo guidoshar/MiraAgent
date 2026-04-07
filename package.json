@@ -1,0 +1,61 @@
+{
+  "name": "mira-agent",
+  "version": "0.1.0",
+  "description": "MiraAgent — Premium GUI Agent UI Panel with Candy Design, powered by @page-agent/core",
+  "type": "module",
+  "main": "dist/mira-agent.cjs.js",
+  "module": "dist/mira-agent.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mira-agent.es.js",
+      "require": "./dist/mira-agent.cjs.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite --config vite.demo.config.ts",
+    "build": "tsc && vite build",
+    "preview": "vite preview --config vite.demo.config.ts"
+  },
+  "peerDependencies": {
+    "@page-agent/core": ">=1.0.0",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@page-agent/core": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "page-agent": "^1.7.1"
+  },
+  "devDependencies": {
+    "@page-agent/core": "^1.1.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.99.0",
+    "typescript": "~6.0.0",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gui-agent",
+    "page-agent",
+    "ai-copilot",
+    "web-automation",
+    "react",
+    "ui-panel"
+  ]
+}
